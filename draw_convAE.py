@@ -4,7 +4,8 @@ Created on Fri Feb 24 13:17:40 2017
 
 @author: Redouane Lguensat 2017
 
-Draw Convolutional Auto-Encoder based on draw_convnet.py of Gavin Weiguang Ding
+-
+-Draw Convolutional Auto-Encoder based on draw_convnet.py of Gavin Weiguang Ding
 """
 
 """
@@ -147,8 +148,8 @@ if __name__ == '__main__':
         add_mapping(patches, colors, start_ratio_list[ind],
                     patch_size_list[ind], ind,
                     top_left_list, loc_diff_list, num_show_list, size_list)
-        label(top_left_list[ind], text_list[ind] + '\n{}x{} kernel'.format(
-            patch_size_list[ind], patch_size_list[ind]), xy_off=[26, -65])
+#        label(top_left_list[ind], text_list[ind] + '\n{}x{} kernel'.format(
+#            patch_size_list[ind], patch_size_list[ind]), xy_off=[80, -100])
 
 
     ############################
@@ -181,7 +182,7 @@ if __name__ == '__main__':
     plt.axis('equal')
     plt.axis('off')
     plt.show()
-    #fig.set_size_inches(12, 3)
+    fig.set_size_inches(12, 3)
 
     fig_dir = './'
     fig_ext = '.png'
